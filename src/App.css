@@ -1,0 +1,117 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../node_modules/preline/variants.css";
+
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* .container-fluid {
+  width: 100%;
+  height: 100%;
+} */
+#root {
+background-color: aliceblue;
+min-height: 100vh;
+overflow-y: scroll;
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+@keyframes rockImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rocking-image {
+  animation: rockImage 10s ease-out infinite;
+}
+/* Custom Scrollbar Styles for Webkit browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+  height: 10px; /* Height of the horizontal scrollbar (if applicable) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #334155; /* Dark slate background for the track */
+  border-radius: 5px; /* Rounded corners for the track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #00A6F4; /* Bright blue color for the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+  border: 2px solid #334155; /* Border around the thumb to match track background */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #008cd1; /* Slightly darker blue on hover */
+}
+
+/* Custom Scrollbar Styles for Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #00A6F4 #334155; /* thumb color and track color */
+}
+
+/* Optional: Hide scrollbar but keep scroll functionality (not recommended for accessibility) */
+/*
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+*/
