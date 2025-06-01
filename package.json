@@ -19,7 +19,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.6.1",
+=======
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
     "tailwindcss-textshadow": "^2.1.3"
   },
   "devDependencies": {

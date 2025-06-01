@@ -3,7 +3,10 @@ import React, { useEffect, useState } from "react";
 import Movie from "./MovieComponent";
 import NoMovieAvailableComponent from "./NoMovieAvailableComponent";
 import axios from "axios";
+<<<<<<< HEAD
 import ConnectionFailedComponent from "./ConnectionFailedComponent";
+=======
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
 
 export default function MovieList({ 
   movies, 
@@ -45,7 +48,10 @@ export default function MovieList({
 
       } catch (error) {
         console.error("Error fetching detailed movie data:", error);
+<<<<<<< HEAD
         <ConnectionFailedComponent />; // لو حصل خطأ في الاتصال، بنعرض رسالة الخطأ
+=======
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
         setDetailedMovies([]); // بنمسح الأفلام لو حصل خطأ
       }
     };
@@ -60,16 +66,28 @@ export default function MovieList({
       {detailedMovies.length === 0 ? (
         <NoMovieAvailableComponent />
       ) : (
+<<<<<<< HEAD
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-4 place-items-center">
+=======
+        <ul className="flex flex-row flex-wrap justify-center items-center gap-4">
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
           {detailedMovies.map((movie) => (
             <Movie
               key={movie.imdbID}
               movie={movie}
+<<<<<<< HEAD
               setIsOpen={setIsOpen}
               setSelectedMovie={setSelectedMovie}
             />
           ))}
         </div>
+=======
+              setIsOpen={setIsOpen} // بنمرر الدالة setIsOpen هنا لو محتاج تستخدمها في Movie
+              setSelectedMovie={setSelectedMovie} // بنمرر الدالة setSelectedMovie هنا لو محتاج تستخدمها في Movie
+            />
+          ))}
+        </ul>
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
       )}
     </>
   );
