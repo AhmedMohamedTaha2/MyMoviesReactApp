@@ -41,11 +41,19 @@ function Movie({ movie, setIsOpen, setSelectedMovie }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+<<<<<<< HEAD
+      className="w-full" // Simplified width class to fit grid cell
+    >
+      <motion.div
+        whileHover={{ scale: 1.02 }}
+        className="group relative flex flex-col h-[500px] rounded-3xl overflow-hidden 
+=======
       className="flex-grow-0 flex-shrink-0 w-full sm:w-1/2 lg:w-1/2 xl:w-1/4 p-4 mx-auto"
     >
       <motion.div
         whileHover={{ scale: 1.02 }}
         className="group relative flex flex-col h-[550px] rounded-3xl overflow-hidden 
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
           shadow-[0_0_15px_rgba(0,0,0,0.2)]
           hover:shadow-[0_0_30px_rgba(56,189,248,0.3)]
           hover:border-2 hover:border-sky-500/50
@@ -71,8 +79,13 @@ function Movie({ movie, setIsOpen, setSelectedMovie }) {
         {/* Content container */}
         <div className="relative flex flex-col h-full z-10 
           group-hover:shadow-[0_0_30px_rgba(56,189,248,0.2)]">
+<<<<<<< HEAD
+          {/* Image section with adjusted aspect ratio */}
+          <div className="relative w-full aspect-[2/3] overflow-hidden">
+=======
           {/* Image section with zoom effect */}
           <div className="relative w-full aspect-[9/8] overflow-hidden">
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black/90 z-10" />
             <motion.img
               whileHover={{ scale: 1.5 }}
@@ -97,14 +110,23 @@ function Movie({ movie, setIsOpen, setSelectedMovie }) {
             </div>
           </div>
 
+<<<<<<< HEAD
+          {/* Content section with adjusted padding */}
+          <div className="flex flex-col gap-2 p-4 flex-grow 
+=======
           {/* Content section with enhanced hover effects */}
           <div className="flex flex-col gap-4 p-6 flex-grow 
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
             bg-gradient-to-t from-slate-900/90 to-transparent
             group-hover:from-slate-900/95 
             group-hover:to-slate-900/20 
             transition-all duration-500">
             
+<<<<<<< HEAD
+            <h3 className="text-lg font-bold leading-tight line-clamp-2 
+=======
             <h3 className="text-xl font-bold leading-tight line-clamp-2 
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
               text-white 
               group-hover:text-sky-400 
               group-hover:text-shadow-[0_0_10px_rgba(56,189,248,0.5)]
@@ -112,23 +134,40 @@ function Movie({ movie, setIsOpen, setSelectedMovie }) {
               {Title}
             </h3>
 
+<<<<<<< HEAD
+            <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center gap-1 backdrop-blur-sm bg-white/5 px-2 py-1 rounded-full border border-white/10 text-sm">
+=======
             <div className="flex items-center gap-3 flex-wrap">
               <div className="flex items-center gap-2 backdrop-blur-sm bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
                 <span className="text-sky-400">📆</span>
                 <span className="text-white/90 font-medium">{Year}</span>
               </div>
 
+<<<<<<< HEAD
+              <span className={`${badgeColor} px-2 py-1 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-sm`}>
+=======
               <span className={`${badgeColor} px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-sm`}>
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
                 {Type}
               </span>
             </div>
 
+<<<<<<< HEAD
+            <div className="flex flex-wrap gap-1.5">
+=======
             <div className="flex flex-wrap gap-2">
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
               {genres.map((genre, index) => (
                 <motion.span
                   key={index}
                   whileHover={{ scale: 1.05 }}
+<<<<<<< HEAD
+                  className={`text-xs px-2 py-1 rounded-full font-medium tracking-wide backdrop-blur-sm ${
+=======
                   className={`text-xs px-3 py-1.5 rounded-full font-medium tracking-wide backdrop-blur-sm ${
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
                     THEME.colors.genreColors[genre] || THEME.colors.genreColors.default
                   }`}
                 >

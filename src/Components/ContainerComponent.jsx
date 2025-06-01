@@ -6,6 +6,10 @@ import {
   HiChevronLeft,
   HiChevronRight,
 } from "react-icons/hi2";
+<<<<<<< HEAD
+import LoaderComponent from "./LoaderComponent"; 
+=======
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
 
 export default function ContainerComponent({
   children,
@@ -42,7 +46,11 @@ export default function ContainerComponent({
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-[700px]">
+<<<<<<< HEAD
+          <LoaderComponent />
+=======
         <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-sky-500"></div>
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
       </div>
     );
   }
@@ -61,7 +69,11 @@ export default function ContainerComponent({
 
         <div
           ref={containerRef}
+<<<<<<< HEAD
+          className="flex flex-wrap justify-center gap-4"
+=======
           className="flex flex-wrap justify-center gap-4 h-[700px] overflow-y-auto overflow-x-hidden custom-scrollbar"
+>>>>>>> ca2e8f32a12898622a9adb59fab8db3382528fe4
         >
           {children}
         </div>
